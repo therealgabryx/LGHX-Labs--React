@@ -208,5 +208,17 @@ module.exports = {
   },
   video: {
     link: "https://www.youtube.com/watch?v=9No-FiEInLA"
+  },
+  ecommerce: {
+    title: "props:ecom-title",
+    description: "props:ecom-description"
+  },
+  webdev: {
+    title: "props:webdev-title",
+    description: "propa:webdev-description"
+  },
+  marketing: {
+    title: "props:marketing-title",
+    description: "props:ecom-description"
   }
 };

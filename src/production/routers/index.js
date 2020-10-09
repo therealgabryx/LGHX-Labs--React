@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // importing production components
-import Test from "../components/Test/Test";
+import Landing from "../pages/landing/Landing";
+import ServiceLayout from "../pages/services/layout";
 
 
 // importing all the themes from template
@@ -36,7 +37,8 @@ export default class Routes extends React.PureComponent {
       <React.Fragment>
         <Router>
           <Switch>
-            <Route exact path="/" component={Test} />
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/layout" component={ServiceLayout} />
             <Route exact path="/template" component={Theme1} />
             <Route exact path="/template/theme1" component={Theme1} />
             <Route exact path="/template/theme2" component={Theme2} />
