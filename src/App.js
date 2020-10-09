@@ -2,8 +2,8 @@ import React from "react";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
-import AgencyCoApp from "./reducers";
-import Routes from "./routers";
+import AgencyCoApp from "./production/reducers";
+import Routes from "./production/routers"
 
 // create store
 const store = createStore(

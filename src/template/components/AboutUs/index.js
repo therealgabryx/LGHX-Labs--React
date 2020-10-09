@@ -108,7 +108,7 @@ class About extends React.Component {
                       alt="about us"
                       className="img-fluid"
                     />
-                    >
+                  
                   </div>
                 </div>
               </div>

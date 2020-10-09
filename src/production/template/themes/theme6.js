@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
 import Header from "../components/Header/header";
-import HeroSection from "../components/HeroSection/HeroSection4";
+import HeroSection from "../components/HeroSection/HeroSection6";
 import PromoSection from "../components/PromoSection";
-import AboutSection from "../components/AboutUs/AboutUs4";
-import FeatureSection from "../components/Features/Feature3";
-import VideoSection from "../components/Video";
+import AboutSection from "../components/AboutUs/AboutUs6";
+import FeatureSection from "../components/Features/Feature6";
 import PricingSection from "../components/Pricing";
 import Testimonial from "../components/Testimonial";
 import Screenshots from "../components/Screenshots";
+import DownloadSection from "../components/Download";
 import TeamMember from "../components/TeamMember";
 import ContactSection from "../components/Contact";
 import TrustedCompany from "../components/TrustedCompany/TrustedCompany";
@@ -25,10 +25,10 @@ class Theme extends Component {
           <PromoSection />
           <AboutSection />
           <FeatureSection />
-          <VideoSection showDownloadBtn={true} />
           <PricingSection hideFaq={true} faq="four" bgColor="gray" />
           <Testimonial />
           <Screenshots />
+          <DownloadSection />
           <TeamMember />
           <ContactSection />
           <TrustedCompany />
