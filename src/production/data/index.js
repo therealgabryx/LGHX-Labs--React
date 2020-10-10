@@ -6,26 +6,26 @@ module.exports = {
     bgImage: "img/app-hero-bg.jpg"
   },
   promo: {
-    title: "Why small business owners love AppCo?",
+    title: "Business²",
     description:
-      "Following reasons show advantages of adding AgencyCo to your lead pages, demos and checkouts",
+      "Unlock your business' full potential by embracing online opportunities.",
     items: [
       {
         title: "Ecommerce",
         description:
-          "Increase sales by showing true dynamics of your website",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem",
         icon: "ti-shopping-cart text-white"
       },
       {
         title: "Web Applications",
         description:
-          "Build your online store’s trust using Social Proof & Urgency",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem",
         icon: "ti-cloud-up text-white"
       },
       {
         title: "Digital Marketing",
         description:
-          "Realize importance of social proof in customer’s purchase decision",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem",
         icon: "ti-dashboard text-white"
       }
     ]
@@ -143,15 +143,14 @@ module.exports = {
     ]
   },
   contact: {
-    title: "Contact with us",
+    title: "Get to know us.",
     description:
-      "It's very easy to get in touch with us. Just use the contact form or pay us a visit for a coffee at the office. Dynamically innovate competitive technology after an expanded array of leadership.",
-
+      "It's very easy to get in touch with us. Just use the contact form below or note down our info!",
     office: "Head Office",
-    address: "121 King St, Melbourne VIC 3000, Australia",
-    phone: "+61 2 8376 6284",
-    email: "hello@yourdomain.com"
-  },
+    address: "placeholder address",
+    phone: "+39 379 109 2939",
+    email: "business@lghxlabs.com"
+  }, 
   trustedCompany: [
     "img/client-1-color.png",
     "img/client-6-color.png",
@@ -167,19 +166,23 @@ module.exports = {
     "img/client-5-gray.png"
   ],
   trustedCompanyAboutUs: {
-    title: "Trusted by companies",
-    description: "Rapidiously morph transparent internal or \"organic\" sources whereas resource sucking e-business. Conveniently innovate compelling internal.",
+    title: "is powered by",
+    description: " ",
     companies: [
-      "img/client-5-color.png",
-      "img/client-1-color.png",
-      "img/client-6-color.png",
-      "img/client-3-color.png",
-      "img/client-4-color.png",
-      "img/client-5-color.png",
-      "img/client-7-color.png",
-      "img/client-2-color.png",
-      "img/client-1-color.png",
-      "img/client-3-color.png"
+      "img/poweredby/google-cloud.png",
+      "img/poweredby/github.png",
+      "img/poweredby/hotjar.png",
+      "img/poweredby/firebase.png",
+      "img/poweredby/gitkraken.png",
+      "img/poweredby/npm.png",
+      "img/poweredby/figma.png",
+      "img/poweredby/gfuel.png",
+      "img/poweredby/discord.png",
+      "img/poweredby/shopify.png",
+      "img/poweredby/facebook.png",
+      "img/poweredby/web-dev.png",
+      "img/poweredby/google-analytics.png",
+      "img/poweredby/react.png"
     ]
   },
   teamMember: {

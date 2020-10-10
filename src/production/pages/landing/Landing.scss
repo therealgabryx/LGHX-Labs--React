@@ -16,9 +16,31 @@
         margin: 30px 0;
     }
     
+    .serv-card {
+        margin: 5% 0;
+    } 
+
+    .powered-by {
+        position: relative;
+        box-sizing: border-box;
+
+        div { 
+            position: relative;
+            
+            img { 
+              position: relative;
+              left: 7.5%;  
+            } 
+        } 
+    } 
+
     @media screen and (min-width: 1024px) {
         .hero-logo-img {
             margin: -80px 0 30px 0;
+        }
+
+        .serv-card {
+            margin: 0;
         }
     }
     

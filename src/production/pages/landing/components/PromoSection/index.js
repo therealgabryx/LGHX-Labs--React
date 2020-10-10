@@ -38,13 +38,16 @@ class PromoSection extends React.Component {
             <div className="row equal">
               {(this.state.promo.items || []).map(item => {
                 return ( 
-                  <div className="col-md-4 col-lg-4" key={item.title}> 
+                  <div className="col-md-4 col-lg-4 serv-card" key={item.title}> 
                     <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                       <div className="circle-icon mb-5">
                         <span className={item.icon}></span>
                       </div>
                       <h5>{item.title}</h5>
                       <p>{item.description}</p>
+                      <a className="btn btn-outline-dark" style={{}} href="#services">
+                        Learn more
+                      </a>
                     </div>
                   </div> 
                 ); 

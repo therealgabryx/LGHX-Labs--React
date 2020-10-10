@@ -14,33 +14,31 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment> 
         <footer className="footer-section">
           <div
-            className={"footer-top background-img-2 " + (this.props.noSubscription ? 'py-5' : 'pt-150 pb-5')} 
+            className={"footer-top " + (this.props.noSubscription ? 'py-5' : 'pt-150 pb-5')} 
             style={{
-              backgroundImage: "url('../img/footer-bg.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center top",
-              backgroundSize: "cover"
+              backgroundColor: "#202020",
+              paddingTop:"7.5vh"
             }}
-          >
+          > 
             <div className="container">
               <div className="row justify-content-between">
+
                 <div className="col-lg-3 mb-3 mb-lg-0">
                   <div className="footer-nav-wrap text-white">
                     <img
-                      src="../img/logo-white-1x.png"
+                      src="../img/lghx/Lghx-Logo-White.svg"
                       alt="footer logo"
-                      width="120"
+                      width="180"
                       className="img-fluid mb-3"
                     />
                     <p>
-                      Holisticly empower premium architectures without
-                      value-added ideas. Seamlessly evolve cross-platform
-                      experiences.
+                      Problem solving for the digital age. 
                     </p>
 
+                    {/* 
                     <div className="social-list-wrap">
                       <ul className="social-list list-inline list-unstyled">
                         <li className="list-inline-item">
@@ -64,22 +62,29 @@ class Footer extends React.Component {
                           </a>
                         </li>
                       </ul>
-                    </div>
-                  </div>
-                </div>
+                    </div> */}
+                  </div> 
+                </div> 
+
                 <div className="col-lg-3 ml-auto mb-4 mb-lg-0">
                   <div className="footer-nav-wrap text-white">
-                    <h5 className="mb-3 text-white">Others Links</h5>
+                    <h5 className="mb-3 text-white">Links.</h5>
                     <ul className="list-unstyled">
                       <li className="mb-2">
-                        <a href="/#">About Us</a>
+                        <a href="#hero">About us</a>
                       </li>
                       <li className="mb-2">
-                        <a href="/#">Contact Us</a>
+                        <a href="#features">Services</a>
+                      </li>
+                      {/* <li className="mb-2">
+                        <a href="/ecommerce">Ecommerce</a>
+                      </li>
+                      <li className="mb-2"> 
+                        <a href="/webapps">Web Applications</a>
                       </li>
                       <li className="mb-2">
-                        <a href="/#">Pricing</a>
-                      </li>
+                        <a href="/advertising">Digital Marketing</a>
+                      </li> */}
                       <li className="mb-2">
                         <a href="/#">Privacy Policy</a>
                       </li>
@@ -91,50 +96,35 @@ class Footer extends React.Component {
                 </div>
                 <div className="col-lg-3 ml-auto mb-4 mb-lg-0">
                   <div className="footer-nav-wrap text-white">
-                    <h5 className="mb-3 text-white">Support</h5>
+                    <h5 className="mb-3 text-white">Get in touch.</h5>
                     <ul className="list-unstyled support-list">
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-location-pin mr-2"></span>
-                        121 King Melbourne
-                        <br />
-                        Australia 3000
+                        Trento, Italy
                       </li>
                       <li className="mb-2 d-flex align-items-center">
-                        <span className="ti-mobile mr-2"></span>{" "}
-                        <a href="tel:+61283766284"> +61 2 8376 6284</a>
+                        <span className="ti-email mr-2"></span>{" "}
+                        <a href="mailto:business@lghxlabs.com">business@lghxlabs.com</a>
                       </li>
                       <li className="mb-2 d-flex align-items-center">
-                        <span className="ti-email mr-2"></span>
-                        <a href="mailto:mail@example.com"> mail@example.com</a>
-                      </li>
-                      <li className="mb-2 d-flex align-items-center">
-                        <span className="ti-world mr-2"></span>
-                        <a href="/#"> www.yourdomain.com</a>
-                      </li>
+                        <span className="ti-mobile mr-2"></span>
+                        <a href="tel:+393791092939">+39 379 109 2939</a>
+                      </li> 
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-3">
-                  <div className="footer-nav-wrap text-white">
-                    <h5 className="mb-3 text-white">Location</h5>
-                    <img
-                      src="../img/map.png"
-                      alt="location map"
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
 
-          <div className="footer-bottom gray-light-bg pt-4 pb-4">
+          <div className="footer-bottom gray-light-bg pt-4 pb-4" style={{backgroundColor:"#101010"}}>
             <div className="container">
               <div className="row text-center justify-content-center">
                 <div className="col-md-6 col-lg-5">
                   <p className="copyright-text pb-0 mb-0">
-                    Copyrights © 2019. All rights reserved by 
-                    <a href="/#"> ThemeTags</a>
+                    Copyrights © 2020-2021 | 
+                    <a href="/#" style={{color:"inherit"}}> Powered by LGHX Labs.</a>
                   </p>
                 </div>
               </div>

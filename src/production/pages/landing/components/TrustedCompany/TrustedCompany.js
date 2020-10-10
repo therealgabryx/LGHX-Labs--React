@@ -26,8 +26,14 @@ class TrustedCompany extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8">
-                <div className="section-heading text-center mb-5">
-                  <h2>{this.state.trustedCompany.title}</h2>
+                <div className="section-heading text-center mb-5 powered-by">
+                  <div>
+                    <img
+                      src="../../img/lghx/Lghx-Logo-Black.svg"
+                      alt="lghxlabs"
+                    />
+                  </div> 
+                  <h2>{this.state.trustedCompany.title}</h2> 
                   <p className="lead">
                     {this.state.trustedCompany.description}
                   </p>
@@ -40,7 +46,11 @@ class TrustedCompany extends React.Component {
                   {(this.state.trustedCompany.companies || []).map(
                     (company, index) => {
                       return (
-                        <div className="item single-client" key={index}>
+                        <div 
+                          className="item single-client" 
+                          key={index}
+                          style={{margin:"20px 0 50px 0"}}
+                        >
                           <img
                             src={company}
                             alt="client logo"

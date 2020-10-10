@@ -28,7 +28,7 @@ class HeroSection extends React.Component {
             <div className="point animated-point-8"></div>
             <div className="point animated-point-9"></div>
           </div>
-          <div className="container" id="hero">
+          <div className="container" id="Hero">
             <div className="row align-items-center justify-content-between">
               <div className="col-md-6 col-lg-6">
                 <div className="hero-content-left ptb-100 text-white"> 
@@ -36,13 +36,14 @@ class HeroSection extends React.Component {
                     <img 
                       className="img-fluid"
                       src="../img/lghx/Lghx-Logo-White.svg" 
+                      alt="lghxlabs"
                     />
                   </div>
                   <h1 className="text-white hero-head">
                     <span>Problem solving</span> <br />for the digital age.
                   </h1>
                   <p className="lead hero-tagline">
-                    We help businesses to grow by upping their digital game.
+                    We grow businesses by stepping up their digital game.
                   </p> 
 
                   <a href="#services" className="btn app-store-btn page-scroll hero-cta">

@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import { subscribe } from "../../actions/index";
 import _data from "../../data";
 
+// import landing styles 
+import "../../pages/landing/Landing.css";
+
 class Subscribe extends React.Component {
   constructor(props) {
     super(props);
@@ -77,42 +80,56 @@ class Subscribe extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="shape-img subscribe-wrap">
-          <img
-            src="img/footer-top-shape.png"
-            alt="footer shape"
-            className="img-fluid"
-          />
-          <div className="container">
+        <div 
+          className="shape-img subscribe-wrap"
+          style={{backgroundColor:"#FFFFFF", padding:"10vh 0"}}
+        >
+          <div className="container" style={{padding:"0"}}>
             <div className="row justify-content-center">
-              <div className="col-md-6">
-                <form
-                  method="post"
-                  className="subscribe-form subscribe-form-footer d-none d-md-block d-lg-block"
-                  onSubmit={this.handleSubmit}
-                >
-                  <div className="d-flex align-items-center">
-                    <input
-                      type="text"
-                      className="form-control input"
-                      id="email-footer"
-                      name="email"
-                      placeholder="info@yourdomain.com"
-                      value={this.state.email}
-                      onChange={e => this.handleFormValueChange("email", e)}
-                    />
-                    <input
-                      type="submit"
-                      className="button btn solid-btn"
-                      id="submit-footer"
-                      value={this.state.btnText}
-                      disabled={this.state.disableBtn}
-                      onClick={() => {
-                        this.changeBtnText("Subscribing...");
-                      }}
-                    />
-                  </div>
-                </form>
+              <div 
+                style={{
+                  width:"100%", 
+                  display:"flex", 
+                  flexWrap:"wrap", 
+                  justifyContent:"space-around", 
+                  alignItems:"center"
+                }}
+              > 
+                <div className="head" style={{textAlign:"left"}}>
+                  <h4>Subscribe to our newsletter!</h4>
+                  <p></p> 
+                </div>
+                <div style={{flex:"0 1 500px"}}>
+                  <form
+                    method="post"
+                    className="subscribe-form subscribe-form-footer"
+                    onSubmit={this.handleSubmit} 
+                    id="newsletterForm"
+                    style={{width:"85%", margin:"auto"}} 
+                  >
+                    <div className="d-flex align-items-center">
+                      <input
+                        type="text"
+                        className="form-control input"
+                        id="email-footer"
+                        name="email"
+                        placeholder="info@youremail.com"
+                        value={this.state.email}
+                        onChange={e => this.handleFormValueChange("email", e)}
+                      />
+                      <input
+                        type="submit"
+                        className="button btn solid-btn"
+                        id="submit-footer"
+                        value={this.state.btnText}
+                        disabled={this.state.disableBtn}
+                        onClick={() => {
+                          this.changeBtnText("Subscribing...");
+                        }}
+                      />
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

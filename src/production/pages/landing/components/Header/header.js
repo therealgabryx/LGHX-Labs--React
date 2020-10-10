@@ -11,7 +11,7 @@ class Header extends React.Component {
         <header className="header">
           <nav className={"navbar navbar-expand-lg fixed-top " + (this.props.bgColor && this.props.bgColor === 'white' ? 'custom-nav white-bg' : 'bg-transparent')}>
             <div className="container"> 
-              <a className="navbar-brand" href="/template">
+              <a className="navbar-brand" href="#Hero">
                 <img
                   src={this.props.bgColor && this.props.bgColor === 'white' ? "../img/lghx/Lghx-Logo-Black.svg" : "../img/lghx/Lghx-Logo-White.svg"}
                   width="120"
@@ -37,14 +37,14 @@ class Header extends React.Component {
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item" style={{display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "1px"}}> 
                     <li className="nav-item"> 
-                      <a className="nav-link" href="#hero"> 
+                      <a className="nav-link" href="#Hero"> 
                         Home
                       </a>  
                     </li> 
 
                     <li className="nav-item"> 
                       <a className="nav-link page-scroll" href="#features">
-                        Features 
+                        Services 
                       </a> 
                     </li> 
                                                                                               

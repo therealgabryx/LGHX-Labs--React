@@ -831,10 +831,9 @@ select.form-control.has-value{
 /*subscribe form footer*/
 
 .subscribe-form-footer{
-    position: absolute;
-    top: 8px;
+    /* position: relative; */
     width: 100%;
-}
+} 
 
 .subscribe-form-footer input.form-control{
     padding: 1.275rem 0.95rem;
@@ -3043,3 +3042,11 @@ button, [type="button"], [type="reset"], [type="submit"] {
     color: #fff;
     opacity: 1;
 }
+
+
+/* Overrides */
+
+body { 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+} 

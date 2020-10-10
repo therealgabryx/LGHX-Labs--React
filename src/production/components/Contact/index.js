@@ -106,19 +106,19 @@ class Contact extends Component {
                   <p>{this.state.contact.description}</p>
                 </div>
                 <div className="footer-address">
-                  <h6>
-                    <strong>{this.state.contact.office}</strong>
-                  </h6>
-                  <p>{this.state.contact.address}</p>
                   <ul>
                     <li>
-                      <span>Phone: {this.state.contact.phone}</span>
+                      <span>
+                        Email : {"  "}
+                        <a href="mailto:business@lghxlabs.com">
+                          {this.state.contact.email}
+                        </a>
+                      </span>
                     </li>
                     <li>
-                      <span>
-                        Email :{" "}
-                        <a href="mailto:hello@yourdomain.com">
-                          {this.state.contact.email}
+                      <span>Phone : {"  "} 
+                        <a href="tel:+393791092939">
+                          {this.state.contact.phone}
                         </a>
                       </span>
                     </li>
@@ -126,6 +126,7 @@ class Contact extends Component {
                 </div>
               </div>
               <div className="col-md-7">
+                <br/>
                 <form
                   method="POST"
                   id="contactForm1"
@@ -133,16 +134,17 @@ class Contact extends Component {
                   onSubmit={this.handleSubmit}
                 >
                   <h5>Reach us quickly</h5>
+                  <br/> 
                   <div className="row">
                     <div className="col-sm-6 col-12">
                       <div className="form-group">
-                        <input
+                        <input 
                           value={this.state.name}
                           onChange={e => this.handleFormValueChange("name", e)}
                           type="text"
                           className="form-control"
                           name="name"
-                          placeholder="Enter name"
+                          placeholder="Your name"
                           required="required"
                         />
                       </div>
@@ -155,7 +157,7 @@ class Contact extends Component {
                           type="email"
                           className="form-control"
                           name="email"
-                          placeholder="Enter email"
+                          placeholder="Your email"
                           required="required"
                         />
                       </div>
@@ -171,7 +173,7 @@ class Contact extends Component {
                           name="phone"
                           className="form-control"
                           id="phone"
-                          placeholder="Your Phone"
+                          placeholder="Phone"
                         />
                       </div>
                     </div>
@@ -187,7 +189,7 @@ class Contact extends Component {
                           size="40"
                           className="form-control"
                           id="company"
-                          placeholder="Your Company"
+                          placeholder="Company"
                         />
                       </div>
                     </div>
@@ -206,12 +208,14 @@ class Contact extends Component {
                           rows="7"
                           cols="25"
                           placeholder="Message"
+                          required="required"
                         ></textarea>
                       </div>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-sm-12 mt-3">
+                      <br/>
                       <button
                         type="submit"
                         className="btn solid-btn"
