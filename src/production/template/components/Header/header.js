@@ -4,19 +4,19 @@ import { connect } from "react-redux";
 class Header extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <header className="header">
+      <React.Fragment> 
+        <header className="header"> 
           <nav className={"navbar navbar-expand-lg fixed-top " + (this.props.bgColor && this.props.bgColor === 'white' ? 'custom-nav white-bg' : 'bg-transparent')}>
-            <div className="container">
-              <a className="navbar-brand" href="/template">
-                <img
+            <div className="container"> 
+              <a className="navbar-brand" href="/template"> 
+                <img 
                   src={this.props.bgColor && this.props.bgColor === 'white' ? "../img/logo-color-1x.png" : "../img/logo-white-1x.png"}
-                  width="120"
-                  alt="logo"
+                  width="120" 
+                  alt="logo" 
                   className="img-fluid"
-                />
-              </a>
-              <button
+                /> 
+              </a> 
+              <button 
                 className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -135,9 +135,9 @@ class Header extends React.Component {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> 
           </nav>
-        </header>
+        </header> 
       </React.Fragment>
     );
   }

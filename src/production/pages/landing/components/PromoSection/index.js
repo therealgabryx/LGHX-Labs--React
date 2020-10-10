@@ -10,21 +10,22 @@ class PromoSection extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount() {  
     /**
      * Your ajax will goes here to get data then call setState
      */
-
      
     this.setState({
       promo: _data.promo
     }); 
-  }
+  } 
 
   render() {
     return (
       <React.Fragment>
-        <section className="promo-section ptb-100">
+        <section className="promo-section ptb-100"
+                 id="features"
+        > 
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-7 col-md-8">
@@ -36,8 +37,8 @@ class PromoSection extends React.Component {
             </div>
             <div className="row equal">
               {(this.state.promo.items || []).map(item => {
-                return (
-                  <div className="col-md-4 col-lg-4" key={item.title}>
+                return ( 
+                  <div className="col-md-4 col-lg-4" key={item.title}> 
                     <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                       <div className="circle-icon mb-5">
                         <span className={item.icon}></span>
@@ -45,9 +46,9 @@ class PromoSection extends React.Component {
                       <h5>{item.title}</h5>
                       <p>{item.description}</p>
                     </div>
-                  </div>
-                );
-              })}
+                  </div> 
+                ); 
+              })} 
             </div>
           </div>
         </section>

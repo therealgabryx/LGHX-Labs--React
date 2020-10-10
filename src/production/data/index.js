@@ -11,22 +11,22 @@ module.exports = {
       "Following reasons show advantages of adding AgencyCo to your lead pages, demos and checkouts",
     items: [
       {
-        title: "Clean Design",
+        title: "Ecommerce",
         description:
           "Increase sales by showing true dynamics of your website",
-        icon: "ti-vector text-white"
+        icon: "ti-shopping-cart text-white"
       },
       {
-        title: "Secure Data",
+        title: "Web Applications",
         description:
           "Build your online store’s trust using Social Proof & Urgency",
-        icon: "ti-lock text-white"
+        icon: "ti-cloud-up text-white"
       },
       {
-        title: "Retina Ready",
+        title: "Digital Marketing",
         description:
           "Realize importance of social proof in customer’s purchase decision",
-        icon: "ti-eye text-white"
+        icon: "ti-dashboard text-white"
       }
     ]
   },

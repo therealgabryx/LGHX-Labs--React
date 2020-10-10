@@ -6,10 +6,10 @@ class TrustedCompany extends React.Component {
     super(props);
     this.state = {
       trustedCompany: []
-    };
-  }
+    }; 
+  } 
 
-  componentDidMount() {
+  componentDidMount() { 
     /**
      * Your ajax will goes here to get data then call setState
      */
@@ -17,7 +17,7 @@ class TrustedCompany extends React.Component {
     this.setState({
       trustedCompany: _data.trustedCompanyAboutUs
     }); 
-  }
+  } 
 
   render() {
     return (

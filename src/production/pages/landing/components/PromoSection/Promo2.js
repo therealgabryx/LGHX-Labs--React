@@ -1,11 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 
-class PromoSection extends React.Component {
-  constructor(props) {
+class PromoSection extends React.Component { 
+  constructor(props) { 
     super(props);
     this.state = {};
-  }
+  } 
 
   componentDidMount() {
     /**

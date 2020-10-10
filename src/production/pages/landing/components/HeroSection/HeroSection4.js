@@ -11,13 +11,13 @@ class HeroSection extends React.Component {
     /**
      * Your ajax will goes here to get data then call setState
      */
-  }
+  } 
 
   render() {
     return (
       <React.Fragment>
-        <section className="hero-section hero-section-2 ptb-100">
-          <div className="circles">
+        <section className="hero-section hero-section-2 ptb-100" id="hero"> 
+          <div className="circles"> 
             <div className="point animated-point-1"></div>
             <div className="point animated-point-2"></div>
             <div className="point animated-point-3"></div>
@@ -28,21 +28,25 @@ class HeroSection extends React.Component {
             <div className="point animated-point-8"></div>
             <div className="point animated-point-9"></div>
           </div>
-          <div className="container">
+          <div className="container" id="hero">
             <div className="row align-items-center justify-content-between">
               <div className="col-md-6 col-lg-6">
-                <div className="hero-content-left ptb-100 text-white">
-                  <h1 className="text-white">
-                    <span>Best way to connect</span> with your customers
+                <div className="hero-content-left ptb-100 text-white"> 
+                  <div className="hero-logo-img"> 
+                    <img 
+                      className="img-fluid"
+                      src="../img/lghx/Lghx-Logo-White.svg" 
+                    />
+                  </div>
+                  <h1 className="text-white hero-head">
+                    <span>Problem solving</span> <br />for the digital age.
                   </h1>
-                  <p className="lead">
-                    Conveniently generate multifunctional markets and B2C
-                    vortals. Uniquely enable inexpensive materials rather than
-                    sticky products.
-                  </p>
+                  <p className="lead hero-tagline">
+                    We help businesses to grow by upping their digital game.
+                  </p> 
 
-                  <a href="#contact" className="btn app-store-btn page-scroll">
-                    Contact with us
+                  <a href="#services" className="btn app-store-btn page-scroll hero-cta">
+                    Find out how
                   </a>
                 </div>
               </div>
