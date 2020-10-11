@@ -100,7 +100,14 @@ class Contact extends Component {
         <section id="contact" className={"contact-us ptb-100 " + (this.props.bgColor && this.props.bgColor === 'white' ? '' : 'gray-light-bg')}>
           <div className="container">
             <div className="row">
-              <div className="col-md-5">
+              <div 
+                className="col-md-5" 
+                style={{
+                  display:"flex", 
+                  flexDirection:"column",
+                  justifyContent:"center"
+                }}
+              >
                 <div className="section-heading">
                   <h3>{this.state.contact.title}</h3>
                   <p>{this.state.contact.description}</p>

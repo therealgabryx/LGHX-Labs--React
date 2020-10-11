@@ -37,7 +37,7 @@ class Header extends React.Component {
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item" style={{display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "1px"}}> 
                     <li className="nav-item"> 
-                      <a className="nav-link" href="#Hero"> 
+                      <a className="nav-link" href="#hero"> 
                         Home
                       </a>  
                     </li> 

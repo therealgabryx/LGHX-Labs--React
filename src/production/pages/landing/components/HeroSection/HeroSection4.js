@@ -28,7 +28,7 @@ class HeroSection extends React.Component {
             <div className="point animated-point-8"></div>
             <div className="point animated-point-9"></div>
           </div>
-          <div className="container" id="Hero">
+          <div className="container" id="hero">
             <div className="row align-items-center justify-content-between">
               <div className="col-md-6 col-lg-6">
                 <div className="hero-content-left ptb-100 text-white"> 
