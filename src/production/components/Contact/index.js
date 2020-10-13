@@ -109,7 +109,7 @@ class Contact extends Component {
                 }}
               >
                 <div className="section-heading">
-                  <h3>{this.state.contact.title}</h3>
+                  <h3 className="spaced-text-small">{this.state.contact.title}</h3>
                   <p>{this.state.contact.description}</p>
                 </div>
                 <div className="footer-address">

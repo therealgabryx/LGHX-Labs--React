@@ -33,6 +33,13 @@
    License: none (public domain)
 */
 
+:root {
+    --theme-color-darker: rgba(38, 36, 106, 1); 
+    --theme-color-dark: rgba(91, 45, 122, 1);
+    --theme-color-light: rgba(173, 34, 116, 1);
+    --theme-color-lighter: rgba(224, 16, 114, 1);   
+} 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -515,14 +522,16 @@ select.form-control.has-value{
     opacity: 1;
 }
 .bg-transparent.affix{
-    background-image: linear-gradient(to right, rgba(32, 40, 119, 1), rgba(55, 46, 149, 1), rgba(83, 49, 177, 1), rgba(114, 48, 205, 1), rgba(150, 41, 230, 1)) !important;
-}
+    /* background-image: linear-gradient(to right, rgba(32, 40, 119, 1), rgba(55, 46, 149, 1), rgba(83, 49, 177, 1), rgba(114, 48, 205, 1), rgba(150, 41, 230, 1)) !important; */
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,1)) !important; 
+} 
 .navbar{
     transition: all .3s ease-in-out;
 }
 @media (min-width: 320px) and (max-width: 992px){
     .navbar{
-        background: #202877 !important;
+        /* background: #202877 !important; */
+        background-color: #000000 !important;
         padding: .95rem 1rem;
     }
 
@@ -791,7 +800,7 @@ select.form-control.has-value{
     right: 0;
     bottom: 140px;
     z-index: -1;
-}
+} 
 .hero-7:before{
     position: absolute;
     content: '';
@@ -3050,3 +3059,11 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 } 
+
+.spaced-text {
+    letter-spacing: 0.2rem;
+}  
+
+.spaced-text-small {
+    letter-spacing: 0.1rem;
+}

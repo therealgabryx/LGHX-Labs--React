@@ -68,7 +68,7 @@ class Footer extends React.Component {
 
                 <div className="col-lg-3 ml-auto mb-4 mb-lg-0">
                   <div className="footer-nav-wrap text-white">
-                    <h5 className="mb-3 text-white">Links.</h5>
+                    <h5 className="mb-3 text-white spaced-text">Links.</h5>
                     <ul className="list-unstyled">
                       <li className="mb-2">
                         <a href="#hero">About us</a>
@@ -96,7 +96,7 @@ class Footer extends React.Component {
                 </div>
                 <div className="col-lg-3 ml-auto mb-4 mb-lg-0">
                   <div className="footer-nav-wrap text-white">
-                    <h5 className="mb-3 text-white">Get in touch.</h5>
+                    <h5 className="mb-3 text-white spaced-text">Get in touch.</h5>
                     <ul className="list-unstyled support-list">
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-location-pin mr-2"></span>
